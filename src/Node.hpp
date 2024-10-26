@@ -2,16 +2,21 @@
 #define NODE_HPP
 
 class Node {
-public:
+private:
     int value;    
     Node* next;   
 
-
-    Node(int value);
+public:
+    Node();
 
     void setValue(int value);
 
+    int getValue();
+
     void setNext(Node* node);
+
+    Node* getNext();
+
 };
 
 

@@ -1,13 +1,17 @@
 #include <iostream>
 #include "Node.hpp"
+#include "LinkedList.hpp"
 
 using namespace std;
 
 int main() {
     
-    Node node(85);
+    LinkedList linkedList;
 
-    cout << node.value;
+    linkedList.prepend(5);
+    linkedList.prepend(50);
+
+    cout << linkedList.getHead()->getValue();
 
     return 0;
 }
