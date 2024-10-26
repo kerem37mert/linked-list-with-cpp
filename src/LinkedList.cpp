@@ -34,3 +34,12 @@ void LinkedList::append(int value) {
         tmp->setNext(node);
     }
 }
+
+void LinkedList::removeFirst() {
+    if(this->head == nullptr)
+        return;
+    
+    Node* tmp = this->head->getNext();
+    delete this->head;
+    this->head = tmp;
+}

@@ -15,4 +15,6 @@ public:
     void prepend(int value);
 
     void append(int value);
+
+    void removeFirst();
 };

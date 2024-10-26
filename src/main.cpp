@@ -10,8 +10,10 @@ int main() {
 
     linkedList.append(5);   
     linkedList.append(55); 
+    linkedList.removeFirst();
+    linkedList.removeFirst();
 
-    cout << linkedList.getHead()->getNext()->getValue();
+    cout << linkedList.getHead()->getValue();
 
     return 0;
 }
