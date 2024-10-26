@@ -5,6 +5,8 @@ LinkedList::LinkedList() {
 }
 
 Node* LinkedList::getHead() {
+    if(this->head == nullptr)
+        return nullptr;
     return this->head;
 }
 

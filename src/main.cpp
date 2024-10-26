@@ -13,7 +13,7 @@ int main() {
     linkedList.removeFirst();
     linkedList.removeFirst();
 
-    cout << linkedList.getHead()->getValue();
+    cout << linkedList.getHead();
 
     return 0;
 }
