@@ -8,6 +8,11 @@ public:
 
 
     Node(int value);
+
+    void setValue(int value);
+
+    void setNext(Node* node);
 };
+
 
 #endif
