@@ -1,0 +1,3 @@
+/home/kerem/projeler/c-linked-list/build/CMakeFiles/linkedlist.dir
+/home/kerem/projeler/c-linked-list/build/CMakeFiles/edit_cache.dir
+/home/kerem/projeler/c-linked-list/build/CMakeFiles/rebuild_cache.dir
