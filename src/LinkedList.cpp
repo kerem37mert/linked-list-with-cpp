@@ -20,3 +20,17 @@ void LinkedList::prepend(int value) {
     Node* node = this->createNode(value, this->head);
     this->head = node;
 }
+
+void LinkedList::append(int value) {
+    Node* node = this->createNode(value, nullptr);
+    Node* tmp = this->head;
+
+    if(tmp == nullptr)
+        this->head = node;
+    else {
+        while(tmp->getNext() != nullptr)
+            tmp = tmp->getNext();
+
+        tmp->setNext(node);
+    }
+}

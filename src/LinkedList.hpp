@@ -13,4 +13,6 @@ public:
     Node* getHead();
 
     void prepend(int value);
+
+    void append(int value);
 };

@@ -8,10 +8,10 @@ int main() {
     
     LinkedList linkedList;
 
-    linkedList.prepend(5);
-    linkedList.prepend(50);
+    linkedList.append(5);   
+    linkedList.append(55); 
 
-    cout << linkedList.getHead()->getValue();
+    cout << linkedList.getHead()->getNext()->getValue();
 
     return 0;
 }
