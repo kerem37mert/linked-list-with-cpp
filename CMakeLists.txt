@@ -3,4 +3,7 @@ project(linkedlist)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(linkedlist src/main.cpp)
+add_executable(linkedlist src/main.cpp
+            src/Node.hpp
+            src/Node.cpp
+)

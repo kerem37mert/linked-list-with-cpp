@@ -81,12 +81,12 @@ clean: CMakeFiles/linkedlist.dir/clean
 CMakeFiles/linkedlist.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerem/projeler/c-linked-list/build/CMakeFiles --progress-num=1,2 "Built target linkedlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kerem/projeler/c-linked-list/build/CMakeFiles --progress-num=1,2,3 "Built target linkedlist"
 .PHONY : CMakeFiles/linkedlist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/linkedlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerem/projeler/c-linked-list/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerem/projeler/c-linked-list/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linkedlist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kerem/projeler/c-linked-list/build/CMakeFiles 0
 .PHONY : CMakeFiles/linkedlist.dir/rule
