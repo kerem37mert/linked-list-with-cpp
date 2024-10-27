@@ -34,6 +34,18 @@ void LinkedList::traversal() {
     }
 }
 
+unsigned int LinkedList::len() {
+    Node* tmp = this->head;
+    unsigned int count = 0;
+
+    while(tmp != nullptr) {
+        tmp = tmp->getNext();
+        count++;
+    }
+
+    return count;
+}
+
 void LinkedList::prepend(int value) {
     Node* node = this->createNode(value, this->head);
     this->head = node;

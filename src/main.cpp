@@ -16,14 +16,6 @@ int main() {
     linkedList.append(30); 
 
     linkedList.traversal();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.removeEnd();
-    linkedList.traversal();
 
     return 0;
 }

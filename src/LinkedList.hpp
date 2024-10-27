@@ -14,6 +14,8 @@ public:
 
     void traversal();
 
+    unsigned int len();
+
     void prepend(int value);
 
     void append(int value);
