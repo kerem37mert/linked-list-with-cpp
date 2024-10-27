@@ -20,5 +20,7 @@ public:
 
     bool removeFirst();
 
+    bool removeEnd();   
+
     bool removeIndex(unsigned int index);
 };

@@ -64,6 +64,28 @@ bool LinkedList::removeFirst() {
     return true;
 }
 
+bool LinkedList::removeEnd() {
+    Node* tmp = this->head;
+
+    if(tmp == nullptr)
+        return false;
+
+    if(tmp->getNext() == nullptr) {
+        delete tmp;
+        this->head = nullptr;
+
+    } else {
+        while(tmp->getNext()->getNext() != nullptr)
+            tmp = tmp->getNext();
+
+        Node* tmp2 = tmp->getNext();
+        tmp->setNext(nullptr);
+        delete tmp2;
+    }
+
+    return true;
+}
+
 bool LinkedList::removeIndex(unsigned int index) {
     Node* tmp = this->head;
 
