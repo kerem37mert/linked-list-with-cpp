@@ -10,10 +10,8 @@ int main() {
 
     linkedList.append(5);   
     linkedList.append(55); 
-    linkedList.removeFirst();
-    linkedList.removeFirst();
 
-    cout << linkedList.getHead();
+    linkedList.traversal();
 
     return 0;
 }

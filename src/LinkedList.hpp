@@ -12,6 +12,8 @@ public:
 
     Node* getHead();
 
+    void traversal();
+
     void prepend(int value);
 
     void append(int value);
