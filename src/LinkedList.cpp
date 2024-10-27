@@ -65,27 +65,23 @@ bool LinkedList::removeFirst() {
 }
 
 bool LinkedList::removeIndex(unsigned int index) {
-   Node* tmp = this->head;
+    Node* tmp = this->head;
 
-    if(index == 0) {
-        this->head = tmp->getNext();
-        delete tmp;
-    } else {
-        for(int i=0; i<index-1; i++) {
-            if(tmp->getNext() == nullptr)
-                return false;
+    if(index == 0)
+        return this->removeFirst();
 
-            tmp = tmp->getNext();
-        }
-
-        if(tmp->getNext() == nullptr)
+    for(int i=0; i<index-1; i++) {
+        if(tmp == nullptr)
             return false;
-            
-        Node* tmp2 = tmp->getNext();
-        tmp->setNext(tmp2->getNext());
-        delete tmp2;
+        tmp = tmp->getNext();
     }
 
+    if(tmp== nullptr || tmp->getNext() == nullptr)
+        return false;
 
-   return true;
+    Node* tmp2 = tmp;
+    tmp->setNext(tmp2->getNext());
+    delete tmp2;
+
+    return true;
 }

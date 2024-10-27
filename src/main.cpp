@@ -16,7 +16,7 @@ int main() {
     linkedList.append(30); 
 
     linkedList.traversal();
-    linkedList.removeIndex(6);
+    linkedList.removeIndex(0);
     linkedList.traversal();
 
     return 0;
