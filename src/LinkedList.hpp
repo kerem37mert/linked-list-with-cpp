@@ -18,5 +18,7 @@ public:
 
     void append(int value);
 
-    void removeFirst();
+    bool removeFirst();
+
+    bool removeIndex(unsigned int index);
 };

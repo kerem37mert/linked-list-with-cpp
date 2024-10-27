@@ -53,11 +53,39 @@ void LinkedList::append(int value) {
     }
 }
 
-void LinkedList::removeFirst() {
+bool LinkedList::removeFirst() {
     if(this->head == nullptr)
-        return;
+        return false;
     
     Node* tmp = this->head->getNext();
     delete this->head;
     this->head = tmp;
+
+    return true;
+}
+
+bool LinkedList::removeIndex(unsigned int index) {
+   Node* tmp = this->head;
+
+    if(index == 0) {
+        this->head = tmp->getNext();
+        delete tmp;
+    } else {
+        for(int i=0; i<index-1; i++) {
+            if(tmp->getNext() == nullptr)
+                return false;
+
+            tmp = tmp->getNext();
+        }
+
+        if(tmp->getNext() == nullptr)
+            return false;
+            
+        Node* tmp2 = tmp->getNext();
+        tmp->setNext(tmp2->getNext());
+        delete tmp2;
+    }
+
+
+   return true;
 }
