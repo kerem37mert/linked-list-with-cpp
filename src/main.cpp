@@ -5,17 +5,31 @@
 using namespace std;
 
 int main() {
-    
     LinkedList linkedList;
 
-    linkedList.append(5);   
-    linkedList.append(10); 
-    linkedList.append(15);   
-    linkedList.append(20); 
-    linkedList.append(25);   
-    linkedList.append(30); 
+    const char* asciArt = 
+    "======================================\n"
+    "||                                  ||\n"
+    "||            LINKED LIST           ||\n"
+    "||                                  ||\n"
+    "======================================\n";
 
-    linkedList.traversal();
+    cout << asciArt << endl << endl;
+
+    bool isRun = true;
+    int choice;
+
+    while(isRun) {
+        cout << "Yapmak istediğiniz işlemi seçiniz" << endl;
+        cin >> choice;
+
+        switch(choice) {
+            case 5:     
+                break;
+            default:
+                isRun = false;
+        }
+    }
 
     return 0;
 }
